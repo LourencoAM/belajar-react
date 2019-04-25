@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Header from "../../Components/header";
-import Counter from "../../Components/counter";
+import Header from "../../components/header";
+import Counter from "../../components/counter";
 import { Container, Row, Col, Jumbotron, Button } from "reactstrap";
+import { Link } from "react-router-dom";
 
 class Dashboard extends Component {
   state = {
@@ -94,7 +95,7 @@ class Dashboard extends Component {
           <p>
             <b>Rp {this.state.total}</b>
           </p>
-          <Button outline color="danger">
+          <Button outline color="danger" tag={Link} to="/payment">
             Bayar Sekarang
           </Button>
         </Jumbotron>
