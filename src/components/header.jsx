@@ -13,7 +13,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar className="bg" color="faded" light>
+        <Navbar style={{ backgroundColor: "springgreen" }} color="faded" light>
           <NavbarBrand href="/" className="mr-auto">
             <h2>
               <b style={{ color: "white" }}>GO-Bakso</b>
